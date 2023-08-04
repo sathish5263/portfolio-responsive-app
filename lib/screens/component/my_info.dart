@@ -17,26 +17,27 @@ class MyInfo extends StatelessWidget {
         child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceAround,
            children: [
-            const Spacer(flex: 5,),
-            const CircleAvatar(
-              radius: 50, 
+             Spacer(flex: 3),
+             CircleAvatar(
+              radius: 80, 
               backgroundImage: 
-              AssetImage("assets/images/Profile.jpeg"), 
+              AssetImage("assets/images/MyProfile.JPG"), 
               
             ),
+            SizedBox(height: 10,),
             Text(
-              "NareshKumar E",
-              style: Theme.of(context).textTheme.subtitle2,
+              "SATHISH V",
+              style: Theme.of(context).textTheme.subtitle1,
             ),
-            const Text(
-              "Flutter Developer \n nknaresh3075@gmail.com", 
+             Text(
+              "App Developer", 
               textAlign: TextAlign.center, 
               style: TextStyle(
                 fontWeight: FontWeight.w100, 
               height: 1.5 , 
               ),
             ), 
-            const Spacer(flex: 2,),
+             Spacer(flex: 2,),
            ],
         ),
       ),

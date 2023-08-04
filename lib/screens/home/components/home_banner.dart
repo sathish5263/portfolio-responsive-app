@@ -99,9 +99,11 @@ class AnimatedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedTextKit(
       animatedTexts: [
-        TyperAnimatedText("Responsive Web and Mobile App UI",speed: Duration(milliseconds: 70)),
-        TyperAnimatedText("Job Searching App with Firebase", speed: Duration(milliseconds: 70)),
-        TyperAnimatedText("Portfolio App UI", speed: Duration(milliseconds: 70)),
+        TyperAnimatedText("Responsive Web and Mobile Portfolio App UI in Flutter",speed: Duration(milliseconds: 70)),
+        TyperAnimatedText("Job Searching App in Flutter with Firebase", speed: Duration(milliseconds: 70)),
+        TyperAnimatedText("Complaint Management System in Web Application", speed: Duration(milliseconds: 70)),
+        TyperAnimatedText("Food Delivery Moble App UI in Flutter", speed: Duration(milliseconds: 70)),
+        TyperAnimatedText("AWS service in Cloud", speed: Duration(milliseconds: 70)),
       ],
     );
   }
@@ -119,7 +121,7 @@ class FlutterCodeText extends StatelessWidget {
         text: "<",
         children: [
           TextSpan(
-            text: "flutter", 
+            text: "Project", 
             style: TextStyle(color: primaryColor),
           ),
           TextSpan(text: ">")

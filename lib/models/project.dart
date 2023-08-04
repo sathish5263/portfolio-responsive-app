@@ -6,33 +6,33 @@ class Project {
 
 List<Project> demo_projects = [
   Project(
-    title: "Responsive Admin Panel or Dashboard - Flutter UI",
+    title: "Responsive portfolio app - Flutter UI",
     description:
-        "On Flutter V2.* web officially supported on a stable branch. Today I share an Admin panel or you can call it dashboard UI build with flutter. Now you can build your app dashboard using flutter. This dashboard contains almost everything that you need like a chart, table",
+        "The responsive portfolio app using Flutter provides a visually stunning platform for professionals to showcase their work and skills with cross-device compatibility.",
   ),
   Project(
-    title: "E-Commerce Complate App - Flutter UI",
+    title: "Job seeking application - Flutter UI",
     description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+        "The job seeking application built using Flutter provides an intuitive user interface and powerful search features for job seekers, offering a seamless job search experience.",
   ),
   Project(
-    title: "Outlook Email App Redesign - Flutter Fully Responsive Design UI",
+    title: "Complaint Management Sytem - Web Application",
     description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+        "The web-based complaint management system streamlines the process of submitting and resolving complaints, enhancing communication between users and administrators for efficient management.",
   ),
   Project(
-    title: "Chat/Messaging App Light and Dark Theme - Flutter UI",
+    title: "Food ordering app - Flutter UI",
     description:
-        "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
+        "The food ordering app UI built using Flutter provides a seamless and visually appealing interface for customers to browse menus, customize orders, and track deliveries.",
   ),
   Project(
-    title: "Welcome page, Login Page and Sign up page - Flutter UI",
+    title: "AWS Service - Cloud",
     description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+        "The AWS Cloud project utilizes scalable infrastructure, storage, and compute capabilities, enabling businesses to deploy applications, manage data, and optimize resources for cost-efficiency.",
   ),
-  Project(
-    title: "Covid-19 App - Flutter UI",
-    description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
-  ),
+  // Project(
+  //   title: "Covid-19 App - Flutter UI",
+  //   description:
+  //       "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+  // ),
 ];

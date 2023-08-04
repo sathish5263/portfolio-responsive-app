@@ -42,7 +42,8 @@ dependencies:
   url_launcher: ^6.1.10
   file_picker: ^5.2.11
   path_provider: ^2.0.14
-  http: ^0.13.5
+  http: ^0.13.5 
+  firebase_core: ^2.13.1
   
   
   

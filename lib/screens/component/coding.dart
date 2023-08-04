@@ -18,7 +18,7 @@ class Coding extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(vertical: defaultPadding / 2),
           child: Text(
-           "Coding", 
+           "CODING SKILLS", 
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
@@ -27,11 +27,11 @@ class Coding extends StatelessWidget {
         label: "Dart",
        ),
        AnimatedLinearProgressIndicator(
-        percentage: 0.7,
+        percentage: 0.8,
         label: "C/C++",
        ),
        AnimatedLinearProgressIndicator(
-        percentage: 0.6,
+        percentage: 0.7,
         label: "Java",
        ), 
        AnimatedLinearProgressIndicator(
@@ -39,8 +39,12 @@ class Coding extends StatelessWidget {
         label: "HTML&CSS",
        ), 
         AnimatedLinearProgressIndicator(
-        percentage: 0.3,
+        percentage: 0.4,
         label: "Python",
+       ),
+       AnimatedLinearProgressIndicator(
+        percentage: 0.7,
+        label: "MYSQL",
        ),
       ],
     );

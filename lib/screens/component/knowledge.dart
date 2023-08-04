@@ -18,16 +18,26 @@ class Knowledge extends StatelessWidget {
          Padding(
       padding: EdgeInsets.symmetric(vertical: defaultPadding),
       child: Text(
-        "Knowledge", 
+        "KNOWLEDGE", 
         style: Theme.of(context).textTheme.subtitle2,
         ),
        ), 
-       KnowledgeText(text:"C,C++"),
-       KnowledgeText(text: "Java"),
-       KnowledgeText(text: "Java Swing"),
-       KnowledgeText(text: "Flutter, Dart"), 
+       KnowledgeText(text:"Java Swing"),
        KnowledgeText(text: "GIT Knowledge"), 
-       KnowledgeText(text: "Cloud(AWS)"), 
+       KnowledgeText(text: "Coding Knowledge"), 
+
+         Divider(),
+         Padding(
+      padding: EdgeInsets.symmetric(vertical: defaultPadding),
+      child: Text(
+        "PROFESSIONAL SKILLS", 
+        style: Theme.of(context).textTheme.subtitle2,
+        ),
+       ), 
+       KnowledgeText(text:"Creative Thinking"),
+       KnowledgeText(text: "Quick Learner"),
+       KnowledgeText(text: "Problem Solving"),
+        
        
       ],
     );

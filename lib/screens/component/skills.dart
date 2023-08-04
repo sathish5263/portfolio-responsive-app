@@ -18,7 +18,7 @@ class Skills extends StatelessWidget {
         Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding / 2),
       child: Text(
-        "Skills", 
+        "TECHNICAL SKILLS", 
         style: Theme.of(context).textTheme.subtitle2,
         ),
     ), 
@@ -33,8 +33,8 @@ class Skills extends StatelessWidget {
           SizedBox(width: defaultPadding,),
         Expanded(
           child: AnimatedCircularProgressIndicator(
-          percentage: 0.7, 
-          label: "C/C++",
+          percentage: 0.5, 
+          label: "Flask",
           ),
         ),
           
@@ -45,6 +45,13 @@ class Skills extends StatelessWidget {
           label: "Firebase",
           ),
         ),
+         SizedBox(width: defaultPadding),
+         Expanded(
+          child: AnimatedCircularProgressIndicator(
+          percentage: 0.5, 
+          label: "AWS",
+          ),
+          ),
         
       ],
     ),

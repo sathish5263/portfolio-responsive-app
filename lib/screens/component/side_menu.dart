@@ -23,7 +23,7 @@ class SideMenu extends StatelessWidget {
   //final storage = FirebaseStorage.instance;
 
   _launchurl() async {
-    const url = "https://github.com/NareshElango/";
+    const url = "https://github.com/sathish5263";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -32,7 +32,7 @@ class SideMenu extends StatelessWidget {
   }
 
   _launchurl1() async {
-    const url = "https://instagram.com/_naresh_elango_?igshid=NzMyMjgxZWIzNw==";
+    const url = "https://www.instagram.com/high_flyer_v4/";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -41,7 +41,7 @@ class SideMenu extends StatelessWidget {
   }
 
   _launchurl2() async {
-    const url = "https://www.linkedin.com/in/naresh-kumar-806a21241";
+    const url = "https://www.linkedin.com/in/sathish-v-a74136247/";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -79,16 +79,16 @@ class SideMenu extends StatelessWidget {
               child: Column(
                 children: [
                   const AreaInfoText(
-                    title: "Residence",
-                    text: "India",
+                    title: "RESIDENCE",
+                    text: "INDIA",
                   ),
                   const AreaInfoText(
-                    title: "City",
-                    text: "Salem",
+                    title: "CITY",
+                    text: "THANJAVUR",
                   ),
                   const AreaInfoText(
-                    title: "Age",
-                    text: "20",
+                    title: "AGE",
+                    text: "21",
                   ),
                   const Skills(),
                   const SizedBox(height: defaultPadding / 2),
@@ -99,7 +99,7 @@ class SideMenu extends StatelessWidget {
                   TextButton(
                     onPressed: () async {
                       const resumeUrl =
-                          "https://drive.google.com/file/d/1hcUd0P6qni_v8cwmV5vugsFh-T-wJLQP/view?usp=share_link";
+                          "https://drive.google.com/file/d/1s3LJB1-XQJIO5h5tfuWRjX3MP9xWvYa0/view?usp=drivesdk";
                       if (await canLaunch(resumeUrl)) {
                         await launch(resumeUrl);
                       } else {
@@ -135,7 +135,7 @@ class SideMenu extends StatelessWidget {
                           onPressed: () async {
                             _launchurl2();
                             // final url =
-                            //     'https://www.linkedin.com/in/naresh-kumar-806a21241';
+                            //     'https://www.linkedin.com/in/sathish-v-a74136247/';
                             // if (await canLaunch(url)) {
                             //   await launch(url,
                             //       forceSafariVC: false,
@@ -150,7 +150,7 @@ class SideMenu extends StatelessWidget {
                         IconButton(
                           onPressed: () async {
                             _launchurl();
-                            // final url = 'https://github.com/NareshElango/';
+                            // final url = 'https://github.com/sathish5263';
                             // if (await canLaunch(url)) {
                             //   await launch(url,
                             //       forceSafariVC: false,
@@ -166,7 +166,7 @@ class SideMenu extends StatelessWidget {
                           onPressed: () async {
                             _launchurl1();
                             // _launchURL(
-                            //     "https://instagram.com/_naresh_elango_?igshid=NzMyMjgxZWIzNw==");
+                            //     "https://www.instagram.com/high_flyer_v4/");
                           },
                           icon: SvgPicture.asset(
                               "assets/icons/instagram-167-svgrepo-com.svg",

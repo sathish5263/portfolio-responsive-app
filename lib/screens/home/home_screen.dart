@@ -57,11 +57,130 @@ class HomeScreen extends StatelessWidget {
                 ),
         ),
         MyProjects(),
-        Recommendations(),
+        Divider(),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
+          child: Center(
+            child: Container(
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [              
+                        Text(
+                      "REFERENCES DETAILS",
+                      style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold, fontSize: 20,),
+                     ),
+                     SizedBox(
+                      height: defaultPadding,
+                        ),
+                      Center(
+                        child: Responsive(
+                        mobile: ProjectsGridView1(crossAxisCount: 1,
+                        childAspectRatio: 1.1,),
+                        desktop: ProjectsGridView1(
+                          childAspectRatio: 1.2,
+                        ),
+                         tablet: ProjectsGridView1(
+                         childAspectRatio: 1.5,
+                         ),
+                         mobileLarge:ProjectsGridView1(
+                              crossAxisCount: 2,
+                             childAspectRatio: 0.7,
+                              ) ,
+                         ),
+                      ),
+                
+                  ]
+                  ),
+                ),
+               ),
+          ),
+        )
+        //Recommendations(),
       ],
     );
   }
 }
+
+class ProjectCard1 extends StatelessWidget {
+  const ProjectCard1({
+    Key? key,
+    required this.project,
+  }) : super(key: key);
+  final Project project;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(defaultPadding),
+      color: secondaryColor,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            project.title!,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: Theme.of(context).textTheme.subtitle1,
+          ),
+         // const Spacer(),
+          SizedBox(height: defaultPadding,),
+          Text(
+            project.description!,
+            maxLines: Responsive.isMobileLarge(context) ? 10 : 9,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(height: 1.5,color: Colors.amberAccent),
+          ),
+         // Spacer(),
+        ],
+      ),
+    );
+  }
+}
+
+class Project1 {
+  final String? title, description;
+
+  Project1({this.title, this.description});
+}
+
+List<Project> demo_projects1 = [
+  Project(
+    title: "My Info",
+    description:
+        " SATHISH, \n\n 09/04/2002, \n\n PATTUKOTTAI, THANJAVUR DISTRICT, \n\n PIN-614701 \n\n satis5263@gmail.com",
+  ),
+];
+
+class ProjectsGridView1 extends StatelessWidget {
+  ProjectsGridView1({
+    super.key,
+    this.crossAxisCount = 3,
+    this.childAspectRatio = 1.3,
+  });
+
+  final int crossAxisCount;
+  final double childAspectRatio;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+        shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: 1,
+        gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            childAspectRatio: childAspectRatio,
+            crossAxisSpacing: defaultPadding,
+            mainAxisSpacing: defaultPadding),
+        itemBuilder: (context, index) => ProjectCard1(
+              project: demo_projects1[index],
+            ));
+  }
+}
+
+
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -88,7 +207,7 @@ class ProjectCard extends StatelessWidget {
           //SizedBox(height: defaultPadding,),
           Text(
             project.description!,
-            maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
+            maxLines: Responsive.isMobileLarge(context) ? 8 : 6,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(height: 1.5),
           ),
@@ -106,6 +225,9 @@ class ProjectCard extends StatelessWidget {
     );
   }
 }
+
+
+
 
 class HighLight extends StatelessWidget {
   const HighLight({
